@@ -37,7 +37,7 @@ buttonSentences.addEventListener('click', ()=>{
 });
 
 buttonEvent.addEventListener('click',()=>{
-if(buttonEvent.dataset.pass1 === "true" && buttonEvent.dataset.pass2 === "true"){
+if(buttonEvent.dataset.pass1 === "true" && buttonEvent.dataset.pass2 === "true" && buttonEvent.dataset.pass3 === "true"){
     alert("wsh kevnar");
     buttonEvent.setAttribute("href","https://www.oettinger-bier.de/splash-page");
 }
@@ -55,10 +55,12 @@ if(document.body.dataset.isFilled === "false"){
 //Mot de passe
 document.body.addEventListener('keydown',(event)=>{
 if(buttonEvent.classList.contains("zugIcon")){
-    if(event.code === "Numpad0"){
+    if(event.code === "KeyW"){
         buttonEvent.dataset.pass1 = "true";
-    } else if(event.code === "Numpad1"){
+    } else if(event.code === "KeyU"){
         buttonEvent.dataset.pass2 = "true";
+    } else if(event.code === "KeyG"){
+        buttonEvent.dataset.pass3 = "true";
     }
 }
 });
