@@ -1,0 +1,62 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #f1c40f;
+    margin : 0;
+    height: 100%;
+    width: 100%;
+    display : flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+flex-grow: 1;
+}
+main{
+    padding : 10px ;
+    font-weight: bold;
+    font-size:35px;
+    flex-wrap: wrap;
+}
+button{
+    font-size : 20px;
+    padding : 10px ;
+    border : 3px solid #c0392b;
+    background-color: #e67e22;
+    border-radius : 8px ;
+    transition: 0.3 ease-in-out;
+}
+
+button:hover{
+    transform : scale(1.1);
+    background-color: #f39c12;
+    cursor: pointer;
+}
+.buttonEvent{
+    margin:5px;
+    padding : 80px ;
+    color: inherit;
+    background-size: cover;
+    background-image: url("/icon.png");
+}
+.ricardBackground{
+    background-repeat: repeat;
+    background-image: url(/ricard.png);
+}
+
+.zugIcon{
+    background-image: url(/feldbrau.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.dwayne{
+    padding : 80px ;
+    background-image : url(/dwayne.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 500px ;
+}
